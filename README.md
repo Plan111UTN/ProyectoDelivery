@@ -113,6 +113,11 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 
 * Gestor de configuración: Git (Sistema de control de versionado) + Github (Administración de Repositorios).
 
+* Generación de reportes: Jasper Reports - Ireport Versión 5.2
+
+* Maven: project object model (POM) - (Ver archivo de configuración POM.XML)
+
+
 > Cada miembro del equipo debe crearse una cuenta para acceder al gestor y poder subir las implementaciones del proyecto.
 
 ## Diagrama de Entidad-Relación (DER)
