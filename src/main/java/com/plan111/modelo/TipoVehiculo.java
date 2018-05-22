@@ -6,8 +6,4 @@ package com.plan111.modelo;
 
 public class TipoVehiculo {
   private String nombre;
-
-  public void conocerTipoVehiculo() {
-    // code
-  }
 }
