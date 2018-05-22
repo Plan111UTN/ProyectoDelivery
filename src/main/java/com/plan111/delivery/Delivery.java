@@ -10,7 +10,4 @@ package com.plan111.delivery;
  * @author Nicolas Oliva
  */
 public class Delivery {
-    public static void main(String[] args) {
-        System.out.println("Hola!");
-    }
 }
