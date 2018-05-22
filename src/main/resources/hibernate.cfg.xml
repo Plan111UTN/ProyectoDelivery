@@ -5,9 +5,10 @@
 
     <!--Las configuraciones están en: resources/hibernate.properties-->
 
-    <mapping class="com.plan111.modelo.Auto"/>
-    <mapping class="com.plan111.modelo.Marca"/>
-    <mapping class="com.plan111.modelo.Modelo"/>
-    <mapping class="com.plan111.modelo.TipoMotor"/>
+    <mapping class="com.plan111.modelo.EstadoPersonalEntrega"/>
+    <mapping class="com.plan111.modelo.Persona"/>
+    <mapping class="com.plan111.modelo.PersonalEntrega"/>
+    <mapping class="com.plan111.modelo.TipoVehiculo"/>
+    <mapping class="com.plan111.modelo.Vehiculo"/>
   </session-factory>
 </hibernate-configuration>
