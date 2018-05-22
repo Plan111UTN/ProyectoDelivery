@@ -7,4 +7,25 @@ public class PersonalEntrega {
   private Date fechaVencimientoCarnet;
   private Vehiculo vehiculo;
   private EstadoPersonalEntrega estado;
+
+  public void conocerEstadoPersonalEntrega() {
+    // code
+  }
+
+  public void confirmarEntrega() {
+    // code
+  }
+
+  public void conocerVehuiculo() {
+    // code
+  }
+
+  public void entregar() {
+    // code
+  }
+
+  public void registrarPersonalEntrega() {
+    // code
+  }
+  
 }
