@@ -12,3 +12,4 @@ hibernate.properties
 /target/
 testing/
 src/main/resources/hibernate.properties
+src/main/resources/hibernate.properties
