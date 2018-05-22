@@ -9,11 +9,11 @@ public class PersonalEntrega {
   private EstadoPersonalEntrega estado;
 
   public void conocerEstadoPersonalEntrega() {
-    //this.estado = estado;
+    // code
   }
 
   public void confirmarEntrega() {
-    //this.estado = estado;
+    // code
   }
 
   public void conocerVehuiculo() {
