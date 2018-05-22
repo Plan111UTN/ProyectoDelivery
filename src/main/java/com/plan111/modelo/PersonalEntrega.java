@@ -15,16 +15,5 @@ public class PersonalEntrega {
   public void confirmarEntrega() {
     // code
   }
-
-  public void conocerVehuiculo() {
-    // code
-  }
-
-  public void entregar() {
-    // code
-  }
-
-  public void registrarPersonalEntrega() {
-    // code
-  }
+  
 }
