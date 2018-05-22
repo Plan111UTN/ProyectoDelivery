@@ -15,5 +15,16 @@ public class PersonalEntrega {
   public void confirmarEntrega() {
     //this.estado = estado;
   }
-  
+
+  public void conocerVehuiculo() {
+    // code
+  }
+
+  public void entregar() {
+    // code
+  }
+
+  public void registrarPersonalEntrega() {
+    // code
+  }
 }
