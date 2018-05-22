@@ -9,4 +9,8 @@ public class Vehiculo {
   private String modelo;
   private String marca;
   private TipoVehiculo tipoVehiculo;
+
+  public void conocerTipoVehiculo() {
+    //code
+  }
 }
