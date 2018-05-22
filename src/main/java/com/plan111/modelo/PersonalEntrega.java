@@ -7,13 +7,4 @@ public class PersonalEntrega {
   private Date fechaVencimientoCarnet;
   private Vehiculo vehiculo;
   private EstadoPersonalEntrega estado;
-
-  public void conocerEstadoPersonalEntrega() {
-    //this.estado = estado;
-  }
-
-  public void confirmarEntrega() {
-    //this.estado = estado;
-  }
-  
 }
