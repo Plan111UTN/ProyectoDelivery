@@ -5,6 +5,9 @@
 out/*
 *.iml
 
+# Archivo de configuración de Hibernate
+hibernate.properties
+
 # Otros
 /target/
 testing/
