@@ -2,11 +2,15 @@ package com.plan111.modelo;
 
 import java.util.Date;
 
-public class PersonalEntrega {
+public class PersonalEntrega extends Persona {
   private Integer numeroCarnet;
   private Date fechaVencimientoCarnet;
   private Vehiculo vehiculo;
   private EstadoPersonalEntrega estado;
+
+  public PersonalEntrega(String nombre, String apellido, Integer dni, Integer telefono) {
+    super(nombre, apellido, dni, telefono);
+  }
 
   public void conocerEstadoPersonalEntrega() {
     // code
@@ -27,5 +31,5 @@ public class PersonalEntrega {
   public void registrarPersonalEntrega() {
     // code
   }
-  
+
 }
