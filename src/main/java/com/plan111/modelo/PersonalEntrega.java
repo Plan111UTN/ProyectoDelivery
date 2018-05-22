@@ -1,11 +1,26 @@
 package com.plan111.modelo;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
-public class PersonalEntrega extends Persona {
+@Entity
+@Getter @Setter @NoArgsConstructor
+@Table(name="PersonalEntrega")
+public class PersonalEntrega extends Persona implements Serializable {
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  private Integer idPersonalEntrega;
+  @Column
   private Integer numeroCarnet;
+  @Column
   private Date fechaVencimientoCarnet;
+  @Column
   private Vehiculo vehiculo;
+  @Column
   private EstadoPersonalEntrega estado;
 
   public PersonalEntrega(String nombre, String apellido, Integer dni, Integer telefono) {
