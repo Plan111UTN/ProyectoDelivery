@@ -9,17 +9,22 @@ import java.util.Date;
 
 @Entity
 @Getter @Setter @NoArgsConstructor
-@Table(name="PersonalEntrega")
+@Table(name="personal_entrega")
 public class PersonalEntrega extends Persona implements Serializable {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Integer idPersonalEntrega;
+
   @Column
   private Integer numeroCarnet;
+
   @Column
+  @Temporal(TemporalType.DATE)
   private Date fechaVencimientoCarnet;
+
   @Column
   private Vehiculo vehiculo;
+
   @Column
   private EstadoPersonalEntrega estado;
 
