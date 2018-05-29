@@ -23,9 +23,11 @@ public class PersonalEntrega implements Serializable {
   @Temporal(TemporalType.DATE)
   private Date fechaVencimientoCarnet;
 
+  @OneToMany
   @Column
   private Vehiculo vehiculo;
 
+  @OneToOne
   @Column
   private EstadoPersonalEntrega estado;
 
