@@ -11,7 +11,6 @@ import java.util.Date;
 @Getter @Setter @NoArgsConstructor
 @Table(name="personal_entrega")
 public class PersonalEntrega implements Serializable {
-  // TODO relaciones entre las tablas
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Integer idPersonalEntrega;
@@ -30,10 +29,6 @@ public class PersonalEntrega implements Serializable {
   @OneToOne
   @Column
   private EstadoPersonalEntrega estado;
-
-//  public PersonalEntrega(String nombre, String apellido, Integer dni, Integer telefono) {
-//    super(nombre, apellido, dni, telefono);
-//  }
 
   public void conocerEstadoPersonalEntrega() {
     // code
@@ -87,11 +82,7 @@ public class PersonalEntrega implements Serializable {
     this.vehiculo = vehiculo;
   }
 
-  public EstadoPersonalEntrega getEstado() {
-    return estado;
-  }
+  public EstadoPersonalEntrega getEstado() { return estado; }
 
-  public void setEstado(EstadoPersonalEntrega estado) {
-    this.estado = estado;
-  }
+  public void setEstado(EstadoPersonalEntrega estado) { this.estado = estado; }
 }
