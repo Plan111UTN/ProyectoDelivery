@@ -10,7 +10,8 @@ import com.plan111.modelo.PersonalEntrega;
 public class CargarPersonalEntrega {
   public static void main(String[] args) {
     PersonalEntrega cadete1 = new PersonalEntrega();
-    cadete1.setNumeroCarnet(123);
+    cadete1.setNombre("Juan");
+    cadete1.setNumeroCarnet(123456);
 
     PersonalEntregaDAO nuevoCadete = new PersonalEntregaDAO();
     nuevoCadete.registrarPersonalEntrega(cadete1);

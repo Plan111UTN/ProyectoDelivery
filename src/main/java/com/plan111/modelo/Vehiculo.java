@@ -28,10 +28,6 @@ public class Vehiculo {
   private String marca;
 
   @OneToOne
-  @Column
+  @JoinColumn(name="tipo_vehiculo")
   private TipoVehiculo tipoVehiculo;
-
-  public void conocerTipoVehiculo() {
-    //code
-  }
 }
