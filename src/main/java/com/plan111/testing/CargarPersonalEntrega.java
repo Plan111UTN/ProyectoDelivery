@@ -2,7 +2,6 @@ package com.plan111.testing;
 
 import com.plan111.dao.PersonalEntregaDAO;
 import com.plan111.modelo.PersonalEntrega;
-import com.plan111.modelo.Vehiculo;
 
 /**
  * @author Guido
