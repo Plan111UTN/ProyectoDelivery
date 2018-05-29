@@ -10,7 +10,8 @@ import java.util.Date;
 @Entity
 @Getter @Setter @NoArgsConstructor
 @Table(name="personal_entrega")
-public class PersonalEntrega extends Persona implements Serializable {
+public class PersonalEntrega implements Serializable {
+  // TODO relaciones entre las tablas
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Integer idPersonalEntrega;
@@ -28,9 +29,9 @@ public class PersonalEntrega extends Persona implements Serializable {
   @Column
   private EstadoPersonalEntrega estado;
 
-  public PersonalEntrega(String nombre, String apellido, Integer dni, Integer telefono) {
-    super(nombre, apellido, dni, telefono);
-  }
+//  public PersonalEntrega(String nombre, String apellido, Integer dni, Integer telefono) {
+//    super(nombre, apellido, dni, telefono);
+//  }
 
   public void conocerEstadoPersonalEntrega() {
     // code
@@ -52,4 +53,43 @@ public class PersonalEntrega extends Persona implements Serializable {
     // code
   }
 
+  public Integer getIdPersonalEntrega() {
+    return idPersonalEntrega;
+  }
+
+  public void setIdPersonalEntrega(Integer idPersonalEntrega) {
+    this.idPersonalEntrega = idPersonalEntrega;
+  }
+
+  public Integer getNumeroCarnet() {
+    return numeroCarnet;
+  }
+
+  public void setNumeroCarnet(Integer numeroCarnet) {
+    this.numeroCarnet = numeroCarnet;
+  }
+
+  public Date getFechaVencimientoCarnet() {
+    return fechaVencimientoCarnet;
+  }
+
+  public void setFechaVencimientoCarnet(Date fechaVencimientoCarnet) {
+    this.fechaVencimientoCarnet = fechaVencimientoCarnet;
+  }
+
+  public Vehiculo getVehiculo() {
+    return vehiculo;
+  }
+
+  public void setVehiculo(Vehiculo vehiculo) {
+    this.vehiculo = vehiculo;
+  }
+
+  public EstadoPersonalEntrega getEstado() {
+    return estado;
+  }
+
+  public void setEstado(EstadoPersonalEntrega estado) {
+    this.estado = estado;
+  }
 }
