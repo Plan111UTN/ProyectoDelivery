@@ -10,5 +10,4 @@ hibernate.properties
 
 # Otros
 /target/
-testing/
 src/main/resources/hibernate.properties
