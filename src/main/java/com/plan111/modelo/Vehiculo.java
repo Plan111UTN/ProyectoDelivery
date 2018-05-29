@@ -27,6 +27,7 @@ public class Vehiculo {
   @Column
   private String marca;
 
+  @OneToOne
   @Column
   private TipoVehiculo tipoVehiculo;
 
