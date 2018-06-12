@@ -1,4 +1,4 @@
-package com.plan111.dao;
+package com.plan111.dao.imp;
 
 import com.plan111.hibernate.HibernateUtil;
 import com.plan111.modelo.PersonalEntrega;

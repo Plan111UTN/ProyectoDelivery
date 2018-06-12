@@ -1,6 +1,6 @@
 package com.plan111.testing;
 
-import com.plan111.dao.PersonalEntregaDAO;
+import com.plan111.dao.imp.PersonalEntregaDAO;
 import com.plan111.modelo.PersonalEntrega;
 
 /**
