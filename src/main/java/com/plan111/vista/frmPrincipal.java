@@ -5,6 +5,8 @@
  */
 package com.plan111.vista;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Nicolas Oliva
@@ -16,6 +18,7 @@ public class frmPrincipal extends javax.swing.JFrame {
      */
     public frmPrincipal() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -27,21 +30,91 @@ public class frmPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnPedidoPrincipal = new javax.swing.JButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        pizzaPrincipal = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuTamañoPrincipal = new javax.swing.JMenuItem();
+        jMenuVariedadPrincipal = new javax.swing.JMenuItem();
+        jMenuTipoPrincipal = new javax.swing.JMenuItem();
+        personalPrincipal = new javax.swing.JMenu();
+        jMenuPersonalPrincipal = new javax.swing.JMenuItem();
+        jMenuEstadoPersonalPrincipal = new javax.swing.JMenuItem();
+        salirPrincipal = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Pizzeria");
+
+        btnPedidoPrincipal.setText("Registrar Pedido");
+
+        pizzaPrincipal.setText("Pizza");
+
+        jMenuItem1.setText("Registrar Pizza");
+        pizzaPrincipal.add(jMenuItem1);
+
+        jMenuTamañoPrincipal.setText("Registrar Tamaño");
+        pizzaPrincipal.add(jMenuTamañoPrincipal);
+
+        jMenuVariedadPrincipal.setText("Registrar Variedad");
+        pizzaPrincipal.add(jMenuVariedadPrincipal);
+
+        jMenuTipoPrincipal.setText("Registrar Tipo");
+        pizzaPrincipal.add(jMenuTipoPrincipal);
+
+        jMenuBar1.add(pizzaPrincipal);
+
+        personalPrincipal.setText("Personal");
+
+        jMenuPersonalPrincipal.setText("Registrar Personal");
+        personalPrincipal.add(jMenuPersonalPrincipal);
+
+        jMenuEstadoPersonalPrincipal.setText("Registrar Estado Personal");
+        personalPrincipal.add(jMenuEstadoPersonalPrincipal);
+
+        jMenuBar1.add(personalPrincipal);
+
+        salirPrincipal.setText("Salir");
+        salirPrincipal.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                salirPrincipalMouseClicked(evt);
+            }
+        });
+        salirPrincipal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                salirPrincipalActionPerformed(evt);
+            }
+        });
+        jMenuBar1.add(salirPrincipal);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnPedidoPrincipal)
+                .addContainerGap(203, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnPedidoPrincipal)
+                .addContainerGap(130, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void salirPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirPrincipalActionPerformed
+        
+    }//GEN-LAST:event_salirPrincipalActionPerformed
+
+    private void salirPrincipalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_salirPrincipalMouseClicked
+        close();
+    }//GEN-LAST:event_salirPrincipalMouseClicked
 
     /**
      * @param args the command line arguments
@@ -69,6 +142,9 @@ public class frmPrincipal extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(frmPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -79,5 +155,21 @@ public class frmPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnPedidoPrincipal;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuEstadoPersonalPrincipal;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuPersonalPrincipal;
+    private javax.swing.JMenuItem jMenuTamañoPrincipal;
+    private javax.swing.JMenuItem jMenuTipoPrincipal;
+    private javax.swing.JMenuItem jMenuVariedadPrincipal;
+    private javax.swing.JMenu personalPrincipal;
+    private javax.swing.JMenu pizzaPrincipal;
+    private javax.swing.JMenu salirPrincipal;
     // End of variables declaration//GEN-END:variables
+    private void close() {
+        if (JOptionPane.showConfirmDialog(rootPane, "¿Desea salir?", "Salir del sistema", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
+            this.dispose();
+        }
+    }
 }
