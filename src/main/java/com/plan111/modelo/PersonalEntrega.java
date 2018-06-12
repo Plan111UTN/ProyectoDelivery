@@ -5,7 +5,9 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Getter @Setter @NoArgsConstructor
@@ -13,14 +15,21 @@ import java.util.Date;
 public class PersonalEntrega implements Serializable {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
-  private Integer idPersonalEntrega;
-
-  @Column
+  private Integer idPersonalEntrega; 
+  
+  @Column(insertable = true,length = 25,nullable = false,unique = false,updatable = true,name = "nombre")
   private String nombre;
 
   @Column
   private String apellido;
-
+  
+  @Column
+  private String dni;
+  
+  @Column
+  @Temporal(TemporalType.TIMESTAMP)
+  private Date fechaNacimiento;
+  
   @Column
   private Integer telefono;
 
@@ -31,9 +40,9 @@ public class PersonalEntrega implements Serializable {
   @Temporal(TemporalType.DATE)
   private Date fechaVencimientoCarnet;
 
-  @OneToOne
+  @OneToMany
   @JoinColumn(name="vehiculo")
-  private Vehiculo vehiculo;
+  private List<Vehiculo> vehiculo ;
 
   @OneToOne
   @JoinColumn(name="estado_personal_entrega")

@@ -5,62 +5,29 @@
  */
 package com.plan111.modelo;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 /**
  *
- * @author Candelaria
+ * @author USUARIO
  */
+@Entity
+@Getter @Setter @NoArgsConstructor
+@Table(name="tipo_pizza")
 public class TipoPizza {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     
-    private Integer id;
+    @Column
     private String nombre;
+    @Column
     private String descripcion;
-    
-    /**
-     * Constructor por defecto de la clase TipoPizza.
-     */
-    public TipoPizza() {
-    }
-   
-    /**
-     * Constructor con todos los atributos de la clase TipoPizza.
-     * @param nombre
-     * @param descripcion 
-     */
-    public TipoPizza(String nombre, String descripcion) {
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-    }
-
-    // A continuación se listan todos los métodos de seteo
-    // de cada atributo de la clase
-    
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-    
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    @Override
-    public String toString() {
-        return this.nombre;
-    }
     
 }

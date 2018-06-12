@@ -1,5 +1,6 @@
 package com.plan111.modelo;
 
+import java.io.Serializable;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -13,7 +14,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "vehiculo")
 @Setter @Getter @NoArgsConstructor
-public class Vehiculo {
+public class Vehiculo implements Serializable {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Integer idVehiculo;
@@ -26,6 +27,10 @@ public class Vehiculo {
 
   @Column
   private String marca;
+      
+  @ManyToOne
+  @JoinColumn(name="idPersonalEntrega")
+  private PersonalEntrega personalEntrega;
 
   @OneToOne
   @JoinColumn(name="tipo_vehiculo")
